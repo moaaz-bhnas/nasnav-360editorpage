@@ -9,10 +9,10 @@ const Statistics = () => {
     <section className="statistics" role="region" aria-labelledby="statistics__title">
       <div className="container">
         <h2 className="statistics__title" id="statistics__title">Statistics</h2>
-        <p className="paragraph paragraph_size_large statistics__paragraph paragraph_shortened">
+        <p className="paragraph paragraph_size_large statistics__paragraph paragraph_shortened_med">
           Statistics include all tasks for your shop with distinct view
         </p>
-        <p className="paragraph paragraph_color_grey statistics__paragraph paragraph_shortened">
+        <p className="paragraph paragraph_color_grey statistics__paragraph paragraph_shortened_med">
           We've dsigned an integrated system for the cash resgister to be able to implement many features with ease, but we'll explain partial scan and its implementation.
         </p>
         <img src={website} alt="Web Site" className="image statistics__image" />

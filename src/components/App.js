@@ -8,6 +8,7 @@ import './Paragraph.scss';
 import Header from './header/Header';
 import ServiceSection from './service/ServiceSection';
 import Statistics from './statistics/Statistics';
+import CountrySection from './countries/CountrySection';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <main className="main" role="main">
           <ServiceSection />
           <Statistics />
+          <CountrySection />
         </main>
       </div>
     );
