@@ -9,18 +9,6 @@ https://moaaz-bhnas.github.io/nasnav-react/
 - Accessibility.
 - Cross-Browser Compatibility.
 
-## Deployed
-https://moaaz-bhnas.github.io/nasnav/
-
-## Quality Standards
-- Responsiveness on different sizes.
-- Accessibility.
-- Cross-Browser Compatibility.
-
-## Design Patterns
-- MVC for JavaScript
-- BEM for CSS
-
 ## Installation
 To clone and run this application, you'll need [Git](https://git-scm.com/) and [node.js](https://nodejs.org/en/) (which comes with npm) installed on your computer. From your command line: 
 ```
