@@ -10,7 +10,7 @@ const ServiceSection = () => {
         <p className="paragraph paragraph_size_large paragraph_align_center serviceSection__paragraph">
           Simple steps away from fame
         </p>
-        <p className="paragraph paragraph_line_high paragraph_color_grey paragraph_size_medSmall">
+        <p className="paragraph paragraph_line_high paragraph_align_center paragraph_color_grey paragraph_size_medSmall">
           Through a few simple steps can make your shop up to the public quickly.
         </p>
         <ServiceList />
