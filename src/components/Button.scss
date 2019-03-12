@@ -1,0 +1,26 @@
+@import '../sass-modules/colors';
+
+.button {
+  font-weight: 700;
+  color: transparent;
+
+  padding: .9rem 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.4rem;
+
+  cursor: pointer;
+}
+
+// modifiers
+.button_size_large {
+  padding: 1.1rem 1.9rem;
+}
+.button_color_white {
+  color: $blue;
+  background-color: #fff;
+}
+.button_color_blue {
+  color: #fff;
+  background-color: $blue;
+}

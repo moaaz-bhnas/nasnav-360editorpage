@@ -1,0 +1,26 @@
+@import '../../sass-modules/breakpoints';
+
+.header {
+  background-image: 
+    linear-gradient(
+      to top right, 
+      #8249F0, #119DEA
+    );
+  background: url('../../image/background.png') no-repeat 50% 50% / cover;
+
+  position: relative;
+
+  @media screen and (min-width: $break-sidenav) {
+    padding-bottom: 8rem;
+  }
+}
+
+/* curve --- */
+.header__curve {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+}
