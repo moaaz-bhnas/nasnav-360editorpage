@@ -11,7 +11,7 @@ const Service = (props) => {
       <div className="service__content">
         <h3 className="service__title">{name}</h3>
         <p className="paragraph paragraph_size_large service__paragraph">{introSentence}</p>
-        <p className="paragraph paragraph_line_high paragraph_color_grey serviceDetails service__serviceDetails">{details}</p>
+        <p className="paragraph paragraph_line_high paragraph_color_grey">{details}</p>
       </div>
     </article>
   );
