@@ -7,6 +7,7 @@ import './Image.scss';
 import './Paragraph.scss';
 import Header from './header/Header';
 import ServiceSection from './service/ServiceSection';
+import Statistics from './statistics/Statistics';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Header />
         <main className="main" role="main">
           <ServiceSection />
+          <Statistics />
         </main>
       </div>
     );
