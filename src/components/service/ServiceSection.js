@@ -5,8 +5,8 @@ import './ServiceSection.scss';
 const ServiceSection = () => {
   return (
     <section className="serviceSection" role="region" aria-labelledby="serviceSection__title">
+      <h2 className="serviceSection__title" id="serviceSection__title">serviceSection</h2>
       <div className="container">
-        <h2 className="serviceSection__title" id="serviceSection__title">serviceSection</h2>
         <p className="paragraph paragraph_size_large paragraph_align_center serviceSection__paragraph">
           Simple steps away from fame
         </p>
