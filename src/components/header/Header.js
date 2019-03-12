@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Topbar from './Topbar';
-import './Header.scss';
 import Intro from './Intro';
 import Laptop from './Laptop';
 import curve from '../../image/curve-cropped.png';
+import './Header.scss';
 
 class Header extends Component {
   state = {  }

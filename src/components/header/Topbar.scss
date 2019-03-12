@@ -55,70 +55,6 @@ Menu Button
 }
 
 /* ===================================== 
-Sidebar
-===================================== */
-.sidebar {
-  text-align: left;
-
-  width: 18.75rem;
-  background-color: #fff;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-/* ===================================== 
-Sidebar Overlay
-===================================== */
-.sidebarOverlay {
-  display: none;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-color: rgba($color: #000, $alpha: .5);
-}
-
-/* ===================================== 
-Mobile Navigation Bar
-===================================== */
-/* --- title --- */
-.mobileNavbar__title {
-  position: absolute;
-  left: -100rem;
-}
-
-/* ===================================== 
-Mobile Navigation Menu
-===================================== */
-.mobileNavMenu {
-  margin: 0;
-}
-
-/* --- link --- */
-.mobileNavMenu__link {
-  display: block;
-
-  text-decoration: none;
-  color: $dark-grey;
-
-  padding: 1rem 0 1rem 3rem;
-
-  transition: .2s background-color;
-
-  &:hover,
-  &:focus {
-    background-color: #d3e9fb;
-  }
-}
-
-/* ===================================== 
 Desktop Navigation Bar 
 ===================================== */
 .desktopNavbar {
@@ -160,7 +96,7 @@ Desktop Navigation Menu
   position: relative;
 
   @media screen and (min-width: $break-large) {
-    padding: 0 1.9rem;
+    padding: 0 2.05rem;
   }
 
   &::before {

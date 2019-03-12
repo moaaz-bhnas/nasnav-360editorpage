@@ -3,6 +3,7 @@ import './App.scss';
 import './Container.scss';
 import './Button.scss';
 import './List.scss';
+import './Image.scss';
 import './Paragraph.scss';
 import Header from './header/Header';
 

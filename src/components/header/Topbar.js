@@ -2,10 +2,28 @@ import React, { Component } from 'react';
 import logo from '../../image/logo.png';
 import menuIcon from '../../image/menu-button.svg';
 import './Topbar.scss';
+import Sidebar from './Sidebar';
 
 class Topbar extends Component {
   state = {  
     menuButtonPressed: false
+  }
+
+  // To focus after the sidebar is closed (focus management)
+  menuButton = React.createRef();
+
+  openSidebar = () => {
+    this.setState({
+      menuButtonPressed: true
+    });
+  }
+
+  closeSidebar = () => {
+    this.setState({
+      menuButtonPressed: false
+    });
+
+    this.menuButton.current.focus();
   }
 
   render() {
@@ -21,36 +39,15 @@ class Topbar extends Component {
           aria-pressed={menuButtonPressed} 
           aria-expanded={menuButtonPressed} 
           aria-controls="sidebar"
+          onClick={this.openSidebar}
+          ref={this.menuButton}
         >
           <img className="image" src={menuIcon} alt="Menu Icon" />
         </button>
         {/* Sidebar: mobile only when menu button is clicked */}
         {
           menuButtonPressed &&
-          <div className="sidebar" id="sidebar">
-            <nav className="mobileNavbar" role="navigation">
-              <h2 className="mobileNavbar__title">Mobile Navigation Bar</h2>
-              <ul className="list mobileNavMenu">
-                <li className="mobileNavMenu__item">
-                  <a href="#" className="mobileNavMenu__link">Navbox</a>
-                </li>
-                <li className="mobileNavMenu__item">
-                  <a href="#" className="mobileNavMenu__link">NavStyle</a>
-                </li>
-                <li className="mobileNavMenu__item">
-                  <a href="#" className="mobileNavMenu__link">Shopping</a>
-                </li>
-                <li className="mobileNavMenu__item">
-                  <a href="#" className="mobileNavMenu__link">360 Editor</a>
-                </li>
-                <li className="mobileNavMenu__item">
-                  <a href="#" className="mobileNavMenu__link">Dashboard</a>
-                </li>
-              </ul>
-            </nav>
-            <button className="button button_color_blue sidebar__button" tabIndex={-1}>Get Started</button>
-            <div className="sidebarOverlay" />
-          </div>              
+          <Sidebar closeSidebar={this.closeSidebar} />              
         }
         {/* Desktop navbar: desktop only */}
         <nav className="desktopNavbar" role="navigation">
