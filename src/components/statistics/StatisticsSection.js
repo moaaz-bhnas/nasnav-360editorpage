@@ -2,9 +2,9 @@ import React from 'react';
 import website from '../../image/site.png';
 import phone from '../../image/phone.png';
 import tablet from '../../image/tablet.png';
-import './Statistics.scss';
+import './StatisticsSection.scss';
 
-const Statistics = () => {
+const StatisticsSection = () => {
   return (
     <section className="statistics" role="region" aria-labelledby="statistics__title">
       <div className="container">
@@ -23,4 +23,4 @@ const Statistics = () => {
   );
 }
 
-export default Statistics;
+export default StatisticsSection;

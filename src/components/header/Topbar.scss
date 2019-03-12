@@ -17,9 +17,15 @@
 Logo
 ===================================== */
 .logo {
-  color: #fff;
-
   width: 7rem;
+}
+
+.logo_color_white {
+  color: #fff;
+}
+
+.logo_verticalAlign_middle {
+  vertical-align: middle;
 }
 
 .topbar__logo {

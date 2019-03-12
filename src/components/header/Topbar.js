@@ -32,7 +32,7 @@ class Topbar extends Component {
     return (
       <div className="topbar header__topbar">
         {/* Logo: always exists */}
-        <img src={logo} alt="Logo" className="logo topbar__logo" />
+        <img src={logo} alt="Logo" className="logo logo_color_white topbar__logo" />
         {/* Menu button: mobile only */}
         <button 
           className="menuButton topbar__menuButton" 
