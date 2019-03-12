@@ -53,10 +53,11 @@ const CountrySection = () => {
         <Map />
         <ul className="list countryList countries__countryList">
           {
-            countriesDetails.map((countryDetails) => {
+            countriesDetails.map((countryDetails, index) => {
               const {name, location, phone, mail} = countryDetails;
               return (
                 <CountryDetails 
+                  key={index}
                   name={name}
                   location={location}
                   phone={phone}
