@@ -1,9 +1,10 @@
 @import '../../sass-modules/colors';
+@import '../../sass-modules/breakpoints';
 
 .sidebar {
   text-align: left;
 
-  width: 18.75rem;
+  width: 13rem;
   background-color: transparent;
 
   position: fixed;
@@ -11,6 +12,14 @@
   left: 0;
   bottom: 0;
   z-index: 1;
+
+  @media screen and (min-width: $break-sidenav-med) {
+    width: 15rem;
+  }
+
+  @media screen and (min-width: $break-sidenav-large) {
+    width: 18.75rem;
+  }
 }
 
 /* ===================================== 
